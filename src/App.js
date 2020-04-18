@@ -4,14 +4,17 @@ import {Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers';
 import { Header } from './components/common';
+import LibraryList  from './components/LibraryList'
 
 const App = () =>{
 
-    //provider can only have one child , but that can be nested
+    //provider can only have one child , but that can be nested 
+    //for redux use npm install --save redux react-redux
     return(
         <Provider store = {createStore(reducers)}>      
             <View >
                 <Header headerText = "Tech Stack" />
+                <LibraryList />
             </View>
         </Provider>
 
