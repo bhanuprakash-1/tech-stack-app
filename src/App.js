@@ -12,7 +12,7 @@ const App = () =>{
     //for redux use npm install --save redux react-redux
     return(
         <Provider store = {createStore(reducers)}>      
-            <View >
+            <View style={{flex : 1}} >
                 <Header headerText = "Tech Stack" />
                 <LibraryList />
             </View>
